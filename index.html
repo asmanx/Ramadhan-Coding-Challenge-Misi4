@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker Sholat</title>
+    <link rel="stylesheet" href="css/solat.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header-full">
+        <div class="header-inner">
+            <div class="header-left">
+                <div class="logo"></div>
+                <div class="brand">
+                    <span class="ramadhan">Ramadhan</span>
+                    <span class="portal">Portal</span>
+                </div>
+            </div>
+
+            <div class="header-right">
+                ⚙️
+            </div>
+
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <div class="nav-container">
+        <div class="navbar">
+
+            <a href="index.html" class="nav-item active">Sholat</a>
+            <a href="quran.html" class="nav-item">Quran</a>
+            <a href="puasa.html" class="nav-item">Puasa</a>
+            <a href="zikir.html" class="nav-item">Zikir</a>
+
+        </div>
+    </div>
+
+    <!-- CONTAINER -->
+    <div class="container">
+        <div class="header">
+            <h2>Sholat Tracker</h2>
+            <div class="date-nav">
+                <button onclick="changeDate(-1)">◀</button>
+                <span id="today"></span>
+                <button onclick="changeDate(1)">▶</button>
+            </div>
+        </div>
+
+        <div class="summary">
+            <div class="stats">
+                <div>
+                    <span id="percent">0%</span>
+                    <div class="status" id="status">Belum Optimal</div>
+                </div>
+
+                <div>
+                    <span id="done">0</span> Done
+                </div>
+
+                <div>
+                    <span id="total">5</span>Total
+                </div>
+            </div>
+        </div>
+
+        <div id="list"></div>
+        <button class="save-btn" onclick="save()">Simpan</button>
+    </div>
+
+    <footer>
+        <p>Created by Asman</p>
+    </footer>
+
+    <script src="script/solat.js"></script>
+
+</body>
+
+</html>
